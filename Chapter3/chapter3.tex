@@ -2,7 +2,7 @@
 %*******************************************************************************
 %****************************** Third Chapter **********************************
 %*******************************************************************************
-\chapter{Modelling uncertainties}
+\chapter{Uncertainty and models}
 
 % **************************** Define Graphics Path **************************
 \ifpdf
@@ -11,19 +11,82 @@
     \graphicspath{{Chapter3/Figs/Vector/}{Chapter3/Figs/}}
 \fi
 
-%********************************** %First Section  **************************************
-\section{Hydrological models} %Section - 3.1
+%********************************** %Section 3.1 **************************************
+\section{Introduction to models uncertainties\label{section3.1}}
+
+% models in general
+
+\begin{itemize}
+    \item input uncertainties
+    \item parameters uncertainties
+    \item models structure uncertainties
+\end{itemize}
+
+% next subsections: hydrological models and econometric models
+
+%********************************** %Section 3.2 **************************************
+\section{Hydrological models
+\label{section3.2}}
+
+\subsection{Hydrological models and machine learning}
+\begin{itemize}
+    \item hydrological models in general: goals and state-of-art
+    \item complexity in prediction of the streamflow at high temporal resolution [non-stationarity, dynamism and non-linearity]
+    \item machine learning as hydrological models alternative: pros and cons
+\end{itemize}
+
+\subsection{A comparison: the Passirio case study}
+
+\subsection{An application: the Alto Adige case study}
+% 
+\begin{itemize}
+    \item PROBLEM: could data-driven methods be applied on Alto Adige?
+    \item METHODS: SVR on 20 basins
+\end{itemize}
+% 
+
+% 
+\subsection{A multi-model approach
+\label{section.sub.3.2.4:multimodel}}
+% 
+\begin{itemize}
+    \item structural uncertainties of the different available packages in Python
+    \item available methods in literature
+        \begin{itemize}
+            \item linear models: Auto Regressive (AR), Moving Average (MA), ARMA, ARIMA, ARIMAX, Linear Regression (LR) and Multiple Linear Regression (MLR) >> not able to catch complexity in streamflow forecasting
+            \item 
+            \item 
+        \end{itemize}
+    \item structural uncertainties due to the limits of the different methods
+    \item Application leveraging Multivariate LSTM vs SVR
+\end{itemize}
+
+\subsubsection{Introduction to main data-driven methods}
 
 
-%********************************** %First Section  **************************************
-\section{Econometric models} %Section - 3.2
+\subsubsection{Multivariate LSTM}
 
 
-%********************************** %FSecond Section  **************************************
-\section{The multi-model approach} %Section - 3.3
 
-\subsection{Econometric ensemble}
-\subsection{Hydrological ensemble}
+
+%********************************** %Section 3.3 **************************************
+\section{Econometric models\label{section3.3}}
+\subsection{Introduction to econometric models}
+\begin{itemize}
+    \item econometric models in general: goals and state-of-art
+    \item the forecasting in North Italy > description of the 58 methods implemented by Ravazzolo
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
